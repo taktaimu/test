@@ -5,9 +5,9 @@ library(stringi)
 
 set.seed(10)
 
-Income <- rgamma(10,2000,2)
-Age <- rbinom(10,100,0.2)
-Gender <- stri_rand_strings(10,1,"[MF]")
+Income <- rgamma(100,3000,2)
+Age <- rbinom(100,100,0.2)
+Gender <- stri_rand_strings(100,1,"[MF]")
 
 #create train DF dataframe
 DF <- data.frame(Age, Income, Gender)
